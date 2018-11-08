@@ -1,0 +1,367 @@
+      *{
+     margin: 0;
+     padding: 0;
+    }
+      ul{
+    list-style: none;
+    }
+     a{
+      text-decoration: none;
+    }
+
+    .swiper-container{
+      width: 100%;
+      height: 100vh;
+    }
+     .title{
+     width: 300px;
+     margin: 0 auto;
+     font-size: 64px;
+     color: rgba(255,255,250,0.7);
+    }
+     .swiper-slide:nth-child(1) .box1{
+     width: 1000px;
+     height:350px;
+     margin: 300px auto;
+     border-radius: 15px;
+     border:1px solid rgba(0,0,0,0.0);
+     text-align: center;
+     color: rgba(255,255,250,0.7);
+     font-size: 30px;
+     font-style: bold;
+     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3),
+              -1px 1px 1px rgba(0, 0, 0, 0.3),
+              3px 3px 1px rgba(0, 0, 0, 0.3),
+              -3px 3px 1px rgba(0, 0, 0, 0.3),
+              5px 5px 1px rgba(0, 0, 0, 0.3),
+              -5px -5px 1px rgba(0, 0, 0, 0.3);
+    position: relative;
+    left: 0;
+    transition:all 0.5s ;
+   }
+    .swiper-slide:nth-child(1) .box1:hover{
+      margin-top: 293px;
+      left: 7px;
+      background-color: rgba(255,255,255,0.1);
+      box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3),
+                 -2px 2px 1px rgba(0, 0, 0, 0.3),
+                 6px 6px 1px rgba(0, 0, 0, 0.3),
+                 -6px 6px 1px rgba(0, 0, 0, 0.3),
+                 10px 10px 1px rgba(0, 0, 0, 0.3),
+                 -10px -10px 1px rgba(0, 0, 0, 0.3);
+     }
+     .swiper-slide:nth-child(1) .box1 h1{
+       font-family: "Lucida Console"
+       
+     }
+     .swiper-slide:nth-child(1) .box1 h3{
+       margin-top: 50px;
+     font-family: "MV Boli"
+     }
+     .swiper-slide:nth-child(1) .box1 h4{
+       margin-top: 50px;
+     }
+
+      .head{
+       background-image: url(../img/头像.ico);
+       opacity: 0.4;
+       width: 64px;
+       height: 64px;
+       border-radius:50%;
+       overflow: hidden;
+       position: absolute;
+       left: 40px;
+       top:40px;
+       transition:all 0.5s linear;
+       z-index: 999
+     }
+      .head:hover{
+       top: 35px;
+       opacity: 1;
+       cursor: pointer;
+     }
+   .swiper-slide:nth-child(2) .box2{
+     width: 800px;
+     height:300px;
+     border-radius: 15px;
+     border:1px solid rgba(0,0,0,0.0);
+/*  text-align: center;*/
+     line-height: 60px;
+     color: rgba(255,255,250,0.7);
+     font-size: 20px;
+     font-style: bold;
+       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3),
+                 -1px 1px 1px rgba(0, 0, 0, 0.3),
+                 2px 2px 1px rgba(0, 0, 0, 0.3),
+                 -2px 2px 1px rgba(0, 0, 0, 0.3),
+                 3px 3px 1px rgba(0, 0, 0, 0.3),
+                 -3px -3px 1px rgba(0, 0, 0, 0.3);
+     position: absolute;
+     transition:all 0.5s linear;
+   }
+    .swiper-slide:nth-child(2) .box2:nth-child(2){
+      transform-origin:bottom center;
+     transform:rotateX(-90deg);
+   }
+
+    .swiper-slide:nth-child(2) .box2 div img{
+      width: 180px;
+      height:180px;
+      position: absolute;
+      right: 30px;
+      top: 60px;
+      border-radius: 40%;
+      transition:all 0.5s linear;
+   }
+    .swiper-slide:nth-child(2) .box2 div img:hover{
+     width: 200px;
+     height: 200px;
+     cursor: pointer;
+   }
+    .swiper-slide:nth-child(2) .box2:hover{
+     background-color: rgba(255,255,255,0.1);
+     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3),
+              -2px 2px 1px rgba(0, 0, 0, 0.3),
+              3px 3px 1px rgba(0, 0, 0, 0.3),
+              -3px 3px 1px rgba(0, 0, 0, 0.3),
+              5px 5px 1px rgba(0, 0, 0, 0.3),
+              -5px -5px 1px rgba(0, 0, 0, 0.3);
+   }
+   .swiper-slide:nth-child(3) .box3 {
+     display: flex;
+     justify-content:space-between;
+     width: 1600px;
+     height: 400px;
+     margin:200px auto;
+   }
+    .swiper-slide:nth-child(3) .box3 div{
+    font-family: "华文行楷";
+    font-size: 30px;
+   text-align: center;
+    line-height: 50px;
+    color: rgba(255,255,250,0.7);
+    width: 250px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius:10px;
+    box-shadow: 2px  2px 2px rgba(0, 0, 0, 0.3),
+                -2px 2px 2px rgba(0, 0, 0, 0.3),
+                4px  4px 2px rgba(0, 0, 0, 0.3),
+                -4px 4px 2px rgba(0, 0, 0, 0.3),
+                4px -4px 2px rgba(0, 0, 0, 0.3),
+                2px -2px 2px rgba(0, 0, 0, 0.3),
+                -4px -2px 2px rgba(0, 0, 0, 0.3);
+    }
+    .swiper-slide:nth-child(3) .box3 .smaico{
+      width: 250px;
+    height: 64px;
+    margin-top:100px;
+    display: flex;
+    justify-content:space-between;
+    border: none;
+    box-shadow: none;
+    }
+    .swiper-slide:nth-child(3) .box3 .smaico img{
+      opacity: 0.4;
+      transition:all 0.2s ease-in;
+    }
+
+    #one{
+      justify-content:space-around!important;
+    }
+    #two{
+      justify-content:center;
+    }
+    .swiper-slide:nth-child(3) .box3 .smaico img:hover{
+       opacity: 1;
+       cursor: pointer;
+    }
+    .swiper-slide:nth-child(3) .box3 div {
+      transition:all 0.3s ease-in;
+    
+    }
+    .swiper-slide:nth-child(3) .box3 div:hover{
+    background-color: rgba(255,255,255,0.1);
+    }
+    
+     .content1{
+    margin: -180px auto;
+    width: 600px;
+    height:300px;
+    color: rgba(255,255,250,0);
+    font-size: 25px;
+    line-height: 43px;
+    border-radius: 20px;
+    transition:all 0.3s;  
+    color:rgba(255,255,250,0.8);
+    background-color: rgba(255,255,255,0.1);
+    }
+
+
+
+    .BTN{
+      margin: 200px auto;
+      width: 600px;
+      height: 50px;
+      display: flex;
+      line-height: 50px;   
+      justify-content:space-between;
+    }
+    .btn{
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+    text-align: center;
+    background-color: rgba(12, 81, 174,0.7);
+    color: rgba(255,255,250,0.7);
+    border-radius: 10px;
+    transition:all 0.1s ease-in;
+    }
+    .btn:hover{
+      font-size: 21px;
+      color: rgba(255,255,250,1);
+      background-color: rgba(12, 81, 174,1);
+      cursor: pointer;
+     }
+
+
+     .swiper-slide:nth-child(6) .box6{
+     width: 600px;
+     height: 620px;
+     margin: 170px auto;
+     border-radius: 20px;
+     text-align: center;
+     font-size: 30px;
+    line-height: 70px;
+    color: rgba(255,255,250,0.7);
+    font-family: "MV Boli";
+    transition: all 1s;   
+    }
+    .swiper-slide:nth-child(6) .box6:hover{
+       background-color: rgba(255,255,255,0.1);    
+       border-left: 5px solid red;
+         border-right: 5px solid red;
+    }
+    .swiper-slide:nth-child(6) .s1{
+      color: red;
+    }
+    .swiper-slide:nth-child(6) .s2{
+      color: rgba(51, 204, 255,0.8);
+    }
+    .swiper-slide:nth-child(6) .s3{
+  color: rgba(102, 204, 0,0.8);
+}
+.swiper-slide:nth-child(6) .s4{
+  color: rgba(255, 102, 51,0.8);
+}
+.swiper-slide:nth-child(6) .box6 h2{
+  margin-bottom: 80px;
+}
+.swiper-slide:nth-child(6) .box6 div{
+  display: flex;
+  width: 600px;
+  height: 42px;
+  justify-content:space-between;
+}
+.swiper-slide:nth-child(6) .box6 div img{
+  width: 32px;
+  height:32px;
+  opacity: 0.6;
+  transition:all 0.2s linear;
+}
+.swiper-slide:nth-child(6) .box6 div img:hover{
+  opacity: 1.0;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+.swiper-slide:nth-child(1){
+   background-image: url(../img/1.png);
+    background-size: cover;
+    opacity: 0.85;    
+}
+
+.swiper-slide:nth-child(2){
+
+    background-image: url(../img/2.png);
+    background-size: cover;
+    opacity: 0.85;
+}
+.swiper-slide:nth-child(3){
+    background-image: url(../img/3.png);
+    background-size: cover;
+    opacity: 0.85;
+}
+.swiper-slide:nth-child(4){
+    background-image: url(../img/4.png);
+    background-size: cover;
+    opacity: 0.85;
+}
+.swiper-slide:nth-child(5){
+    background-image: url(../img/5.png);
+    background-size: cover;
+    opacity: 0.85;
+}
+.swiper-slide:nth-child(6){
+    background-image: url(../img/1.png);
+    background-size: cover;
+    opacity: 0.85;
+}
+  .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+     position: absolute;
+    right: 30px;
+    width: 40px!important;
+  }
+  .swiper-container .swiper-pagination .swiper-pagination-bullet{
+  background-color: rgba(0,0,0,0.7);
+  width: 23px;
+  height: 23px;
+   }
+  .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
+  opacity: 1;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0,0,0,0.7);
+}
+ .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet:nth-child(1){
+  background-image: url(../img/s1.png);
+  background-size: 21px 21px;
+
+ }
+ .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet:nth-child(2){
+  background-image: url(../img/s2.png);
+  background-size: 21px 21px;
+ }
+ .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet:nth-child(3){
+  background-image: url(../img/s3.png);
+  background-size: 21px 21px;
+ }
+ .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet:nth-child(4){
+  background-image: url(../img/s4.png);
+  background-size: 21px 21px;
+ }
+ .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet:nth-child(5){
+  background-image: url(../img/s5.png);
+  background-size: 21px 21px;
+ }
+ .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet:nth-child(6){
+  background-image: url(../img/s6.png);
+  background-size: 21px 21px;
+ }
+.Box2{
+    transform-style:preserve-3d;
+       width: 802px;
+       height:302px;
+       top:0;
+       position: relative;
+       transform-origin:center center;
+       margin:200px auto;
+       backface-visibility: hidden;
+       transition:all 2s ;
+}
+.Box2:hover{
+  top: 150px;
+  transform: rotatex(90deg);
+}
