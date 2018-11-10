@@ -7,6 +7,7 @@
 	</style>
   <link rel="shortcut icon" href="./个人简历.ico">
 	<meta name="keywords" content="全栈工程师个人简历" />
+  <script src="./JQ/jquerymin.js"></script>
 	<script src="./lib/swiper.min.js"></script>
 	<link rel="stylesheet" href="./lib/swiper.min.css">
   <script src='./lib/wow.min.js'></script>
@@ -17,10 +18,25 @@
 </head>
 <body>
   <div class="Wrap">  
-    <div class="daohang"></div>
-  <div class="head"></div>
-   <div class="swiper-container swiper-container-v ">
-    <div class="swiper-wrapper ">
+    <div class="head">     
+    </div>
+    <div class="Nav-btn animated 1 rotateIn ">
+       <img src="./img/导航.png" alt="">
+       <img src="./img/关闭.png" alt="">
+    </div>    
+    <div class="shelter">        
+    </div>
+    <ul class="Nav">
+        <li><span>首页</span></li>
+        <li><span>简介</span></li>
+        <li><span>技能栈</span></li>
+        <li><span>经历</span></li>
+        <li><span>作品集</span></li>
+        <li><span>联系</span></li>
+    </ul>
+
+    <div class="swiper-container swiper-container-v">
+      <div class="swiper-wrapper">
       <div class="swiper-slide "> 
          <div class="swiper-container swiper-container-h">
          <div class="swiper-wrapper">
@@ -123,21 +139,13 @@
             </div>
           </div>
         </div>
-    </div>  
-    <div class="swiper-pagination"></div>
-</div>
-</div>
+       </div>
+       <div class="swiper-pagination"></div>  
+      </div>
+  </div>
 
 </body>
-      
-   <script>    
-  var Wrap = document.querySelector(".Wrap");
-   setTimeout(function(){
-     Wrap.style.display = "block";
-     run();    
-   }
-    , 1);
-  function run(){
+<script>  
   var mySwiper1 = new Swiper ('.swiper-container-v', {
     direction: 'vertical',
   //   lazy: {
@@ -168,10 +176,29 @@
     delay:2000,
     effect : 'fade',
   })    
-   }
+    var btn0 = $(".Nav-btn>img")[0];
+    var btn1 = $(".Nav-btn>img")[1]; 
+    var toggle = true;    
+    $(".Nav-btn").on("click",function(){            
+      if (toggle) {
+        toggle = false;
+        btn0.style.display = "none";
+        btn1.style.display = "block";        
+        $(".Nav").fadeTo("slow",0.7); 
+        $(".shelter").fadeTo("slow",0.7); 
+        $(".Nav").css('display', 'block');
+        $(".shelter").css('display', 'block');         
+      }else{
+        toggle = true;
+        btn0.style.display = "block";
+        btn1.style.display = "none";
+        $(".Nav").fadeOut("fast");
+        $(".shelter").fadeOut("fast");
+      }     
+    })
 
 
 
   </script>
-
+    
 </html>

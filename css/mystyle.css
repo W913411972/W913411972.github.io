@@ -8,10 +8,72 @@
      a{
       text-decoration: none;
     }
-    .Wrap{
+/*    .Wrap{
+      display: none;
+    }*/
+      .Nav-btn{
+      width: 30px;
+      height: 30px;
+      padding: 15px;
+      background-color: rgba(0, 0, 0,0.4);
+      border-radius:50%;
+      position: absolute;
+      right:40px;
+      top:40px;
+      z-index:999;
+      transition:all 0.5s ease-out;
+      animation:all 0.5s ease-out;
+    }
+    .Nav-btn>img{
+      width: 30px;
+      height: 30px;
+    }
+    .Nav-btn:hover{
+      background-color: rgba(0, 116, 255,0.9);
+      cursor: pointer;
+    }
+    .Nav{
+      z-index: 998;
+      height:89%;
+      display: none;
+      position: fixed;
+      opacity: 0;
+      background-color:rgb(19, 83, 155);
+      padding-top: 100px;
+      top:0;
+      right: 0;
+    }
+    .Nav-btn>img:nth-child(2){
       display: none;
     }
-
+    .Nav>li{
+      padding: 3px;
+      width: 360px;
+      height: 90px;
+      font-size: 23px;
+      color: white;
+      line-height: 80px;
+      text-align: right;
+      margin-right: 30px;
+    }
+     .Nav>li span{
+      transition:all 0.5s;
+     }
+    .Nav>li span:hover{
+      font-size: 26px;
+      color:orange;
+      cursor: pointer;
+      text-decoration:line-through;
+    }
+    .shelter{
+      display: none;
+      background-color: #000;
+      position: fixed;
+      opacity: 0;
+      z-index: 300;
+      width: 100%;
+      height: 100%;
+    }
     .swiper-container{
       width: 100%;
       height: 100vh;
@@ -128,7 +190,7 @@
        left: 40px;
        top:40px;
        transition:all 0.5s linear;
-       z-index: 999
+       z-index: 222;
      }
       .head:hover{
        top: 35px;
