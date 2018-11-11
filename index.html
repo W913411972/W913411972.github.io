@@ -15,9 +15,19 @@
   <link rel="stylesheet" href="./lib/swiper.animate.min.css">
   <script src="./lib/swiper.animate.min.js"></script>
   <link rel="stylesheet" href="./css/mystyle.css">
+  <style>
+  </style>
 </head>
 <body>
-  <div class="Wrap">  
+  <div class="Wrap">
+   <div class="cnt animated 1 fadeOut slow delay-1s">
+    <h3>心 有 猛 虎，细 嗅 蔷 薇</h3>
+    <h4>In me the tiger sniffs the rose</h4>
+   </div> 
+   <div class="LOAD">
+    <div class="onload animated 1 fadeOutLeft slow delay-1s"></div>
+    <div class="onload animated 1 fadeOutRight slow delay-1s"></div> 
+   </div>  
     <div class="head">     
     </div>
     <div class="Nav-btn animated 1 rotateIn ">
@@ -38,16 +48,15 @@
     <div class="swiper-container swiper-container-v">
       <div class="swiper-wrapper">
       <div class="swiper-slide "> 
-         <div class="swiper-container swiper-container-h">
-         <div class="swiper-wrapper">
-         <div class="swiper-slide hh1"></div>
-         <div class="swiper-slide hh2"></div>
-         <div class="swiper-slide hh3"></div>
-         <div class="swiper-slide hh4"></div>
-         <div class="swiper-slide hh5"></div>
-         </div>
-         </div>
-
+        <div class="swiper-container swiper-container-h">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hh1"></div>
+            <div class="swiper-slide hh2"></div>
+            <div class="swiper-slide hh3"></div>
+            <div class="swiper-slide hh4"></div>
+            <div class="swiper-slide hh5"></div>
+          </div>
+        </div>
          <div class="ani box1 " swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
            <h1 class>Hello, I'm Mr.Wang</h1>
           <h3>I believe where there was  a will,there was a way</h3>          
@@ -55,8 +64,8 @@
         </div>
       </div>
         <div class="swiper-slide">
-           <p class="title">个人介绍</p>
-           <div class="Box2">
+          <p class="title">个人介绍</p>
+          <div class="Box2">
           <div class="box2 ">
              <div>
                <p>姓名 ： 王彪</p>
@@ -72,7 +81,7 @@
                不浮躁，喜欢全栈，执行力，学习能力都很不错！目前，能做点粗糙设计(比如本网站)。
              </span>
           </div>
-        </div>
+          </div>
         </div>
         <div class="swiper-slide">
           <p class="title">技能掌握</p>
@@ -143,18 +152,24 @@
        <div class="swiper-pagination"></div>  
       </div>
   </div>
-
 </body>
-<script>  
+<script>
+    var onload1 = $(".onload")[0];
+    var onload2 = $(".onload")[1];
+    var Load = $(".LOAD")[0];
+    var cnt = $(".cnt")[0];
+   setTimeout(function(){
+      Load.style.display = "none";
+      cnt.style.display = "none";
+    },3000)  
+
   var mySwiper1 = new Swiper ('.swiper-container-v', {
+    watchSlidesProgress: true,
     direction: 'vertical',
-  //   lazy: {
-  //   loadingClass: 'my-lazy-loading',
-  // },
  pagination: {
     el: '.swiper-pagination',
     dynamicBullets:true,
-  },
+  }, 
      mousewheel:true,
       on:{
       init: function(){
@@ -164,8 +179,9 @@
       slideChangeTransitionEnd: function(){ 
         swiperAnimate(this);
       } 
-    }
+    }  
   })  
+  console.log(mySwiper1.progress);
    var mySwiper2 = new Swiper ('.swiper-container-h', {
     direction: 'horizontal', 
     loop: true, 
@@ -175,7 +191,9 @@
     },
     delay:2000,
     effect : 'fade',
-  })    
+  })   
+
+   
     var btn0 = $(".Nav-btn>img")[0];
     var btn1 = $(".Nav-btn>img")[1]; 
     var toggle = true;    
@@ -196,6 +214,25 @@
         $(".shelter").fadeOut("fast");
       }     
     })
+ 
+          
+      
+    //    var swiperw=$(".swiper-container-v .swiper-wrapper")[0];
+    //    console.log(swiperw);
+    //    var Index = 0;
+    // $(".Nav li").on("click",function(){
+    //        var i = 0 ;
+    //        i = $(this).index();
+    //        var scrollHeight = window.innerHeight;
+    //        var distance = (i-Index)*(-scrollHeight);                
+    //        Index = i; 
+    //        console.log(distance); 
+    // swiperw.style.transform = "translate3d(0px," + distance + "px,0px) transition-duration:300ms"
+    // })
+    
+
+    
+ 
 
 
 
