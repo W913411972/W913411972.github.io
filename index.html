@@ -3,8 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>个人简历</title>
-	<style>
-	</style>
   <link rel="shortcut icon" href="./个人简历.ico">
 	<meta name="keywords" content="全栈工程师个人简历" />
   <script src="./JQ/jquerymin.js"></script>
@@ -16,6 +14,13 @@
   <script src="./lib/swiper.animate.min.js"></script>
   <link rel="stylesheet" href="./css/mystyle.css">
   <style>
+  .IMG{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    /*padding-right: 130px;*/
+  /*  float: left;*/
+  }
   </style>
 </head>
 <body>
@@ -85,29 +90,37 @@
         </div>
         <div class="swiper-slide">
           <p class="title">技能掌握</p>
-        <div class="box3 ">
-        <div class="ani"swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
-           <div class="smaico">
-            <img src="./img/css.png" alt="">
-            <img src="./img/html.png" alt="">
-            <img src="./img/js.png" alt="">
-           </div> 
-          
-          <p>熟练使用Html,css以及js的各类封装</p>
-        </div>       
-        <div class="ani"swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s"> 
-           <div class="smaico" id="one" >  
-            <img src="./img/CSS3.png" alt="">
-            <img src="./img/html5.png" alt="">
+        <div class="box3">           
+          <div class="circle">
+             <canvas width=400 height=400></canvas>      
           </div> 
-           <p>熟练使用css3和html5</p>
-        </div>
-        <div class="ani"swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s"> 
-           <div class="smaico" id="two">
-             <img src="./img/js.png" alt="">
-           </div> 
-          <p>熟练使用JQ,wow,swiper以及animate等各种框架</p>
-        </div>          
+           <ul class="Progress">
+             <li>
+                  <div class="IMG"><img src="./img/html.png" alt=""></div>
+                  <div class="progress-bar"></div>
+             </li>
+             <li>
+                  <div class="IMG"><img src="./img/html5.png" alt=""></div>
+                  <div class="progress-bar"></div>
+             </li>
+             <li>
+                  <div class="IMG"><img src="./img/jq.png" alt=""></div>
+                  <div class="progress-bar"></div>
+             </li>
+             <li>
+                  <div class="IMG"><img src="./img/css.png" alt=""></div>
+                  <div class="progress-bar"></div>
+             </li>
+             <li>
+                  <div class="IMG"><img src="./img/CSS3.png" alt=""></div>
+                  <div class="progress-bar"></div>
+             </li>
+             <li>
+                 <div class="IMG"><img src="./img/js.png" alt=""></div>
+                 <div class="progress-bar"></div>
+             </li>
+           </ul>
+       
         </div>
         </div>
         <div class="swiper-slide">
@@ -153,83 +166,31 @@
       </div>
   </div>
 </body>
+<script src="./js/myswiper.js"></script>
+<script src="./js/Navbtn.js"></script>
+<script src="./js/Navclick.js"></script>
+<script src="./js/skill.js"></script>
 <script>
-    var onload1 = $(".onload")[0];
-    var onload2 = $(".onload")[1];
-    var Load = $(".LOAD")[0];
-    var cnt = $(".cnt")[0];
-   setTimeout(function(){
-      Load.style.display = "none";
-      cnt.style.display = "none";
-    },3000)  
-
-  var mySwiper1 = new Swiper ('.swiper-container-v', {
-    watchSlidesProgress: true,
-    direction: 'vertical',
- pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets:true,
-  }, 
-     mousewheel:true,
-      on:{
-      init: function(){
-        swiperAnimateCache(this); 
-        swiperAnimate(this);
-      }, 
-      slideChangeTransitionEnd: function(){ 
-        swiperAnimate(this);
-      } 
-    }  
-  })  
-  console.log(mySwiper1.progress);
-   var mySwiper2 = new Swiper ('.swiper-container-h', {
-    direction: 'horizontal', 
-    loop: true, 
-    autoplay:true,
-    autoplay: {
-    disableOnInteraction: false,
-    },
-    delay:2000,
-    effect : 'fade',
-  })   
 
 
-    var btn0 = $(".Nav-btn>img")[0];
-    var btn1 = $(".Nav-btn>img")[1]; 
-    var toggle = true;    
-    $(".Nav-btn").on("click",function(){            
-      if (toggle) {
-        toggle = false;
-        btn0.style.display = "none";
-        btn1.style.display = "block";        
-        $(".Nav").fadeTo("slow",0.7); 
-        $(".shelter").fadeTo("slow",0.7); 
-        $(".Nav").css('display', 'block');
-        $(".shelter").css('display', 'block');         
-      }else{
-        toggle = true;
-        btn0.style.display = "block";
-        btn1.style.display = "none";
-        $(".Nav").fadeOut("fast");
-        $(".shelter").fadeOut("fast");
-      }     
-    })
+
+
+      
  
           
       
-    //    var swiperw=$(".swiper-container-v .swiper-wrapper")[0];
-    //    console.log(swiperw);
-    //    var Index = 0;
-    // $(".Nav li").on("click",function(){
-    //        var i = 0 ;
-    //        i = $(this).index();
-    //        var scrollHeight = window.innerHeight;
-    //        var distance = (i-Index)*(-scrollHeight);                
-    //        Index = i; 
-    //        console.log(distance); 
-    // swiperw.style.transform = "translate3d(0px," + distance + "px,0px) transition-duration:300ms"
-    // })
-    
+ 
+       
+
+   
+      
+  
+      
+          
+
+
+
+     
 
     
  
