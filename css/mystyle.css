@@ -11,6 +11,7 @@
       canvas{
         display: block;
         margin:0 auto;
+        opacity: 0
       }
       .LOAD{
        width: 100%;
@@ -156,27 +157,26 @@
       opacity: 0.8;
    }
        .swiper-container-v .swiper-wrapper .swiper-slide:nth-child(2){
-    background-image: url(../img/2.png);
+    background-image: url(../img/2.jpg);
     background-size: cover;
 
     }
     .swiper-container-v .swiper-wrapper .swiper-slide:nth-child(3){
-    background-image: url(../img/3.png);
+    background-image: url(../img/3.jpg);
     background-size: cover;
 
     }
     .swiper-container-v .swiper-slide:nth-child(4){
-    background-image: url(../img/4.png);
+    background-image: url(../img/4.jpg);
     background-size: cover;
 
     }
     .swiper-container-v .swiper-slide:nth-child(5){
-    background-image: url(../img/5.png);
+    background-image: url(../img/5.jpg);
     background-size: cover;
-
     }
     .swiper-container-v .swiper-slide:nth-child(6){
-    background-image: url(../img/1.png);
+    background-image: url(../img/1.jpg);
     background-size: cover;
 
     }
