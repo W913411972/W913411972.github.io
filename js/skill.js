@@ -1,5 +1,4 @@
       function IMGitem(a,b){
-
           $(".IMG").eq(a).hover(function(){
              $(this).next(".progress-bar").stop().animate({
                width: b+"px",
@@ -10,18 +9,19 @@
               },
               1000,); 
               for (var i = 0; i <= (b/3); i++) {
-                 var a = new settime(i);
+                settime(i);
               }
           }, function(){
+            // clearTimeout(t);
             $(this).next(".progress-bar").stop().animate({
                width: "50px",
                opacity:"0",},
                1000,);
-              // clearTimeout(a);
             $('canvas').stop().animate({
               opacity: '0',
               },
               1000,);  
+            clearTimeout(t);
           });
      }
       function cent(cent){             

@@ -406,8 +406,6 @@
     }
     .swiper-container-v .swiper-slide:nth-child(6) .box6:hover{
        background-color: rgba(255,255,255,0.1);    
-       border-left: 5px solid red;
-         border-right: 5px solid red;
     }
     .swiper-container-v .swiper-slide:nth-child(6) .s1{
       color: red;
@@ -500,3 +498,58 @@
   top: 150px;
   transform: rotatex(90deg);
 }
+  .IMG{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+  }
+.trans-horse{
+   width: 600px;
+   height: 350px;
+   margin: 170px auto;
+   position: relative;
+   transform-style:preserve-3d;
+   transition: all 0.5s; /*过渡动画*/
+ }
+ .trans-horse li img{
+   width: 600px;
+   height: 350px;
+   position: absolute;
+ }
+ .trans-horse li div{
+   width: 600px;
+   height: 350px;
+   position: absolute;
+   z-index:99;
+   text-align: center;
+   color: white;
+   background-color: rgba(0,0,0,0.7);
+ }
+ .trans-horse li div h3{
+   padding-top: 20%;
+ }
+ .trans-horse li{
+    transform-style:preserve-3d;
+ }
+  .trans-horse li:nth-child(1){
+   transform:rotateY(60deg) translateZ(550px);
+  }
+ .trans-horse li:nth-child(2){
+   transform:rotateY(120deg) translateZ(550px);
+ }
+ .trans-horse li:nth-child(3){
+   transform:rotateY(180deg)  translateZ(550px);
+ }
+ .trans-horse li:nth-child(4){
+   transform:rotateY(240deg) translateZ(550px);
+ }
+ .trans-horse li:nth-child(5){
+   transform:rotateY(300deg) translateZ(550px);
+ }
+ .trans-horse li:nth-child(6){
+   transform: translateZ(520px);
+ }   
+ .horse_title{
+   opacity: 0;
+   transition:all 1s;
+ } 
